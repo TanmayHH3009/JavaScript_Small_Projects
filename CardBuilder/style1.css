@@ -1,0 +1,95 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.largeGrid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+    width: 60vw;
+    height: 20vh;
+    align-items: center;
+    justify-items: center;
+    object-fit: contain;
+    
+}
+.item-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+    display: inline-block;
+    
+}
+.item-2{
+    grid-row: 2/-1;
+    grid-column: 2/-2;
+    
+}
+.smallGrid {
+display: grid;
+grid-template-rows: 1fr 1fr;
+
+width: 50vw;
+height: 20vh;
+/* align-items: center; */
+}
+.Title{
+grid-column: 1 / -1;
+font-size: 4vh;
+display: flex;
+justify-content: baseline;
+/* align-items: baseline; */
+word-wrap: break-word;
+margin-top: 14px;;
+font-family: "Roboto", "Arial", sans-serif;;
+}
+
+.lside{
+font-size: 3vh;
+font-family: "Roboto", "Arial", sans-serif;
+opacity: .43;
+display: flex;
+align-items: start;
+
+}
+.mid{
+font-size: 3vh;
+font-family: "Roboto", "Arial", sans-serif;
+opacity: .43;
+display: flex;
+align-items: start;
+}
+.rside{
+font-size: 3vh;
+font-family: "Roboto", "Arial", sans-serif;
+opacity: .43;
+display: flex;
+align-items: start;
+
+}
+.dstr{
+display: flex;
+gap: 1vw;
+}
+#rex{
+height: 16vh;
+display: block;
+border-radius: 1.5vh;
+
+}
+.time {
+font-family: "Roboto", "Arial", sans-serif;
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px;  /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
